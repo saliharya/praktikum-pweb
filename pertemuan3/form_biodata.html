@@ -7,15 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulir Biodata</title>
     <style>
-        .main {
+        .header {
+            text-align: center;
+            border-top: 1px solid black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
             border: 1px solid black;
-            padding: 5px;
+        }
+
+        .main {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
         }
 
         .container_form_biodata {
             height: 100%;
             display: flex;
             flex-direction: column;
+            border: 1px solid black;
         }
 
         .container_menu {
@@ -23,6 +38,7 @@
             width: 25%;
             background-color: #f1f1f1;
             text-align: center;
+            border-top: 1px solid black;
         }
 
         .container_form_biodata {
@@ -44,7 +60,11 @@
 </head>
 
 <body>
+
     <div class="main">
+        <header>
+            <h5 class="header">Form Input Biodata</h5>
+        </header>
         <div class="container_menu">
             <div class="menu">
                 <h5>Menu</h5>
@@ -55,11 +75,6 @@
         <div class="container_form_biodata">
             <table>
                 <form action="post">
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td style="font-weight: bold;">Form Input Biodata</td>
-                    </tr>
                     <tr>
                         <td class="label_input">Nama</td>
                         <td>:</td>
@@ -90,6 +105,9 @@
                 </form>
             </table>
         </div>
+        <footer class="footer">
+            <h5>Universitas Ahmad Dahlan</h5>
+        </footer>
     </div>
 </body>
 
