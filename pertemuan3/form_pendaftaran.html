@@ -8,8 +8,8 @@
     <title>Formulir Biodata</title>
     <style>
         .main {
-            border: 1px solid black;
-            padding: 5px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
         }
 
         .container_form_biodata {
@@ -34,11 +34,30 @@
             text-align: left;
             padding-left: 5px;
         }
+
+        .header {
+            text-align: center;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
     </style>
 </head>
 
 <body>
     <div class="main">
+        <header class="header">
+            <h5>Form Pendaftaran</h5>
+        </header>
         <div class="container_menu">
             <div class="menu">
                 <h5>Menu</h5>
@@ -92,8 +111,14 @@
                             <textarea name="prestasi" placeholder="Prestasi" class="input_box"></textarea>
                         </td>
                     </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><button type="submit">Simpan</button> <button type="reset">Batal</button></td>
+                    </tr>
             </table>
         </div>
+        <footer class="footer">Universitas Ahmad Dahlan</footer>
     </div>
 </body>
 
