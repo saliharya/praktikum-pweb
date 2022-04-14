@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Biodata</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .container_form_biodata {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container_menu {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .container_form_biodata {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input_box {
+            width: 95%;
+        }
+
+        .label_input {
+            width: 10%;
+            text-align: left;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container_menu">
+            <div class="menu">
+                <h5>Menu</h5>
+                <p>::<a href="form_biodata.html">Input Biodata</a></p>
+                <p>::<a href="form_pendaftaran.html">Input Pendaftaran</a></p>
+            </div>
+        </div>
+        <div class="container_form_biodata">
+            <table>
+                <form action="post">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td style="font-weight: bold;">Form Input Biodata</td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" placeholder="Masukkan Nama" class="input_box"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Alamat</td>
+                        <td>:</td>
+                        <td><input type="text" name="alamat" placeholder="Masukkan Alamat" class="input_box"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Agama</td>
+                        <td>:</td>
+                        <td><input type="text" name="agama" placeholder="Masukkan Agama" class="input_box"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Jenis Kelamin</td>
+                        <td>:</td>
+                        <td><input type="text" name="jenis_kelamin" placeholder="Masukkan Jenis Kelamin"
+                                class="input_box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><button type="submit">Simpan</button> <button type="reset">Batal</button></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+
+<label></label>
+
+</html>

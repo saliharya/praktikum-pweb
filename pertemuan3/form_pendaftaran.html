@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Biodata</title>
+    <style>
+        .main {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .container_form_biodata {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container_menu {
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .input_box {
+            width: 95%;
+        }
+
+        .label_input {
+            width: 10%;
+            text-align: left;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container_menu">
+            <div class="menu">
+                <h5>Menu</h5>
+                <p>::<a href="form_biodata.html">Input Biodata</a></p>
+                <p>::<a href="form_pendaftaran.html">Input Pendaftaran</a></p>
+            </div>
+        </div>
+        <div class="container_form_pendaftaran">
+            <table>
+                <form action="post">
+                    <tr>
+                        <td class="label_input">Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama" placeholder="Nama" class="input_box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Alamat</td>
+                        <td>:</td>
+                        <td><input type="text" name="alamat" placeholder="Alamat" class="input_box"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">No Telp</td>
+                        <td>:</td>
+                        <td><input type="text" name="no_telp" placeholder="No Telp" class="input_box"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Jenis Kelamin</td>
+                        <td>:</td>
+                        <td><input type="radio" name="jenis_kelamin" value="Laki-laki">Laki-laki
+                            <input type="radio" name="jenis_kelamin" value="Perempuan">Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Agama</td>
+                        <td>:</td>
+                        <td>
+                            <select name="agama">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katolik">Katolik</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label_input">Prestasi</td>
+                        <td>:</td>
+                        <td>
+                            <textarea name="prestasi" placeholder="Prestasi" class="input_box"></textarea>
+                        </td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
