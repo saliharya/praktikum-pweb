@@ -1,72 +1,99 @@
 <html>
 
+
 <head>
     <title>Latihan 5</title>
     <style>
         body {
             font-family: Verdana, sans-serif;
+            background: #eaeaea;
+        }
+
+        body,
+        h1 {
             color: black;
-            background: white;
+        }
+
+        h1 {
+            background-color: #6dddff;
+        }
+
+        .header {
+            background-color: #65a2ff;
+            color: white;
+            padding: 10px;
+        }
+
+        .header:hover,h1:hover,#centered-text:hover {
+            box-shadow: 0px 0px 10px #ff169e;
+            transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
         }
 
         p {
             text-indent: 2em;
-            margin-top: 0;
-            margin-bottom: 0;
         }
 
         h2 {
             font-size: 150%;
         }
 
-        h3 {
-            font-size: 100%;
-        }
-
         div {
             border: solid;
             border-width: thin;
-            width: 100%
+        }
+
+        .justify {
+            text-align: justify;
+            margin: 10px;
+        }
+
+        #centered-text,
+        h1 {
+            text-align: center;
         }
 
         a:link {
-            color: rgb(0, 0, 153)
+            color: salmon;
+            text-decoration: none;
         }
 
         a:visited {
-            color: rgb(153, 0, 153)
+            color: rgb(111, 24, 211);
         }
 
         a:active {
-            color: rgb(255, 0, 102)
+            color: rgb(255, 0, 102);
         }
 
         a:hover {
-            color: rgb(0, 96, 255)
+            color: rgb(0, 96, 255);
+            font-size: larger;
+            transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.3s;
+        }
+
+        h1,
+        .header,
+        div,
+        p,#unordered-list {
+            border-radius: 10px;
+            padding: 5px;
         }
     </style>
 </head>
 
 <body>
     <h1>Header 1 menggunakan Style</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <p>Teks yang ditulis mengikuti sebuah heading dapat menimbulkan akibat tampilan jenis huruf yang berbeda pada
-        beberapa jenis program browser. Anda disarankan segera menutup teks pada paragraf tersebut.</p>
-    <div>Teks pada bagian ini menggunakan DIV dan memiliki border yang mengelilingi teks yang ada </div>
-    <br>
-    <p>Contoh Link adalah sebagai berikut:</p>
+    <h2 class="header">Header 2</h2>
+    <h3 class="header">Header 3</h3>
+    <p class="justify">Teks yang ditulis mengikuti sebuah heading dapat menimbulkan akibat
+        tampilan jenis huruf yang berbeda pada beberapa jenis program browser.
+        Anda disarankan segera menutup teks pada paragraf tersebut.</p>
+    <div class="justify" id="centered-text">Teks pada bagian ini menggunakan DIV dan memiliki border yang
+        mengelilingi teks yang ada </div><br>
+    <p id="link">Contoh Link adalah sebagai berikut:</p>
     <ul>
-        <li>
-            <a href="latihan2.html">Link pertama</a>
-        </li>
-        <li>
-            <a href="latihan5.html">Link kedua</a>
-        </li>
-        <li>
-            <a href="latihan5.html">Link ketiga</a>
-        </li>
+        <li id="unordered-list"><a href="latihan2.html">Link pertama</a></li>
+        <li id="unordered-list"><a href="latihan5.html">Link kedua</a></li>
+        <li id="unordered-list"><a href="latihan5.html">Link ketiga</a></li>
     </ul>
 </body>
-
-</html>
